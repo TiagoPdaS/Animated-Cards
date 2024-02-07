@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    background-color: #5504E5;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-project{
+    
+    background-color: white;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-project::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgb(83,4,230),rgb(225, 0, 0));
+    clip-path: circle(30% at right 80%);
+}
+
+.card-project::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgb(83,4,230),rgb(255, 0, 0));
+    clip-path: circle(30% at 0% 10%);
+}
+
+.card{
+    width: 240px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(265, 265, 265, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: -10px 15px 50px #000;
+    margin: 55px;
+}
+
+
+.card h2{
+    color: black;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 3px #000;
+    font-size: 2.5em;
+}
+span{
+    color:#4b2c8a;
+}
+.card .g{
+    color: #000;
+    font-weight:  bold;
+}
+
+.card p{
+   font-size: 20px;
+    color:black;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.code{
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.code1{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: -15px;
+
+}
+
+.code2{
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
